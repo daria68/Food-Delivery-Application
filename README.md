@@ -1,5 +1,5 @@
 # Food-Delivery-Application
-##Classes
+## Classes
 - Menu
 - Drinks
 - Food
@@ -9,7 +9,7 @@
 - Deliveryman
 - RestaurantService
 - UserService
-##Features
+## Features
 - addFood
 - addDrink
 - removeFood

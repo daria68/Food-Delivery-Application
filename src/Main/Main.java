@@ -40,6 +40,7 @@ public class Main {
             System.out.println("7.Remove food");
             System.out.println("8.Remove drink");
             System.out.println("9.Calculate the total price of the food");
+            System.out.println("10.Calculate the total price of the drink");
             opt = scan.nextInt();
             switch (opt){
                 case 1:{

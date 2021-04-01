@@ -1,6 +1,7 @@
 # Food-Delivery-Application
 ## Classes
 - Menu
+- Restaurant
 - Drinks
 - Food
 - Order

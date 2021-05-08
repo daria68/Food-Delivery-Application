@@ -39,6 +39,6 @@ public abstract class Menu {
 
     @Override
     public String toString(){
-        return "Name: " + this.name + "\nQuantity: "+ this.quantity.toString()+ "\nPrice: " + this.price.toString();
+        return "Name: " + this.name + "\nQuantity: "+ this.quantity.toString()+ "\nPrice: " + this.price.toString() + "\n" ;
     }
 }

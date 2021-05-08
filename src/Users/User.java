@@ -76,6 +76,6 @@ public abstract class User {
     @Override
     public String toString() {
         return "Name: " + this.firstName + " " + this.lastName +
-              "\nPhone number: " + this.phoneNumber + "\nDate birth: " + this.birthDate.toString();
+              "\nPhone number: " + this.phoneNumber + "\nDate birth: " + this.birthDate.toString() + "\n";
     }
 }

@@ -12,8 +12,21 @@ import java.util.TreeSet;
 
 public class UserService {
 
-    private TreeSet<Client> clients = new TreeSet<Client>();
-    private TreeSet<Deliveryman> deliverymen = new TreeSet<Deliveryman>();
+    private static UserService user_instance = null;
+    public static UserService getInstance()
+    {
+        if(user_instance == null)
+            user_instance = new UserService();
+        return user_instance;
+    }
+    private TreeSet<Client> clients;
+    private TreeSet<Deliveryman> deliverymen;
+
+    public UserService(){
+        this.clients = new TreeSet<Client>();
+        this.deliverymen = new TreeSet<Deliveryman>();
+    }
+
 
     public Client createClient(){
         Scanner scanner = new Scanner(System.in);
@@ -35,7 +48,7 @@ public class UserService {
 
         System.out.println("Date birth:");
         String birthDate = scanner.nextLine();
-        String patternDate = "MM-dd-yyyy";
+        String patternDate = "MM/dd/yyyy";
         SimpleDateFormat dateFormat = new SimpleDateFormat(patternDate);
         Date birthDateformat = null;
         try{
@@ -51,6 +64,9 @@ public class UserService {
         return client;
     }
 
+    public TreeSet<Client> get_list_of_clients(){
+        return this.clients;
+    }
 
     public  Deliveryman createDeliveryman() {
         Scanner scanner = new Scanner(System.in);
@@ -76,7 +92,7 @@ public class UserService {
         System.out.println("Date hire:");
         String hireDate = scanner.nextLine();
 
-        String patternDate = "MM-dd-yyyy";
+        String patternDate = "MM/dd/yyyy";
         SimpleDateFormat dateFormat = new SimpleDateFormat(patternDate);
         Date birthDateformat = null;
         try{
@@ -104,6 +120,9 @@ public class UserService {
     }
 
 
+    public TreeSet<Deliveryman> get_list_of_deliverymen(){
+        return this.deliverymen;
+    }
 
     public void displayAllClients(){
         for(Client client: clients){

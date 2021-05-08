@@ -9,8 +9,6 @@ public class Deliveryman extends User implements Comparable<Deliveryman> {
     private Date hireDate;
     private VehicleType vehicleType;
 
-    public Deliveryman (){
-    }
 
     public Deliveryman (String firstName, String lastName, String username, String password, String phoneNumber, Date birthDate, Date hireDate, VehicleType vehicleType)
     {
@@ -39,7 +37,10 @@ public class Deliveryman extends User implements Comparable<Deliveryman> {
 
     @Override
     public String toString(){
-        return super.toString();
+        return super.toString() +
+                "Hire date: " + hireDate +
+                "\nVehicle: " + vehicleType;
+
     }
 
     @Override

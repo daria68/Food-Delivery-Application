@@ -1,0 +1,24 @@
+# Food-Delivery-Application
+## Classes
+- Menu
+- Restaurant
+- Drinks
+- Food
+- Order
+- User
+- Client
+- Deliveryman
+- RestaurantService
+- UserService
+## Features
+- addFood
+- addDrink
+- removeFood
+- removeDrink
+- foodPrice
+- drinksPrice
+- addClient
+- addDeliveryman
+- displayAllClients
+- displayAllDeliverymen
+

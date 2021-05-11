@@ -96,6 +96,7 @@ public class ReadFromFile {
         try {
             RandomAccessFile file = new RandomAccessFile("deliveryman.csv", "r");
             String str;
+
             while((str = file.readLine()) != null)
             {
                 String[] content = str.split(",");

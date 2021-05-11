@@ -17,6 +17,7 @@ public class WriteInFile {
         return write_instance;
     }
 
+
     public void write_food(List<Food> food) {
         try {
             File file = new File("food.csv");

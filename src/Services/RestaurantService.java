@@ -35,6 +35,7 @@ public class RestaurantService {
 
     ///!!!atentie, toate metodele vor trebui modificate pentru o lista de restaurante
 
+
     //add food to the restaurant menu
     public void addFood(String name, Double price, Double quantity, FoodType foodType)
     {

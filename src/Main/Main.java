@@ -12,7 +12,6 @@ import java.util.TreeSet;
 
 public class Main {
 
-
     private static Restaurant CreateRestaurant(){
         Restaurant restaurant = new Restaurant();
         FoodType foodType1 = FoodType.MAIN_COURSE;

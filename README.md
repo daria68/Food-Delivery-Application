@@ -1,6 +1,6 @@
 # Food-Delivery-Application
 ## Classes
-- Menu
+- entities.menuitems
 - Restaurant
 - Drinks
 - Food

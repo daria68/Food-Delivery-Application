@@ -1,5 +1,5 @@
-package Users;
-import Menu.*;
+package entities.users;
+import entities.menuitems.*;
 
 import java.util.*;
 

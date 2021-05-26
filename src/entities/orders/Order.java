@@ -1,6 +1,6 @@
-package Orders;
+package orders;
 
-import Users.*;
+import entities.users.*;
 public class Order {
 
     private int id;

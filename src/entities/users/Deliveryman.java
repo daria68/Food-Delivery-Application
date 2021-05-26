@@ -1,8 +1,6 @@
-package Users;
+package entities.users;
 
 import java.util.*;
-import java.text.SimpleDateFormat;
-import java.text.ParseException;
 
 public class Deliveryman extends User implements Comparable<Deliveryman> {
 

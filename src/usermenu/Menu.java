@@ -1,8 +1,8 @@
-package Main;
+package usermenu;
 
-import Services.*;
-import Users.*;
-import Menu.*;
+import services.*;
+import entities.users.*;
+import entities.menuitems.*;
 
 import java.text.ParseException;
 import java.util.List;
@@ -10,11 +10,12 @@ import java.util.List;
 import java.util.Scanner;
 import java.util.TreeSet;
 
-public class Main {
+
+public class Menu {
 
     private static Restaurant CreateRestaurant(){
         Restaurant restaurant = new Restaurant();
-        FoodType foodType1 = FoodType.MAIN_COURSE;
+        FoodType foodType1 = FoodType.MAIN;
         FoodType foodType2 = FoodType.SALAD;
         FoodType foodType3 = FoodType.SAUCE;
         DrinkType drinkType1 = DrinkType.WATER;
@@ -30,8 +31,9 @@ public class Main {
     }
 
     public static void main(String[] args) throws ParseException {
-        ReadFromFile citire = new ReadFromFile();
-        WriteInFile scrie = new WriteInFile();
+
+        FileReader citire = new FileReader();
+        FileWriter scrie = new FileWriter();
         Scanner scan = new Scanner(System.in);
         UserService orderService = new UserService();
         RestaurantService rservice = new RestaurantService(CreateRestaurant());
@@ -83,7 +85,7 @@ public class Main {
                 }
 
                 case 5:{
-                    FoodType foodType = FoodType.MAIN_COURSE;
+                    FoodType foodType = FoodType.MAIN;
                     rservice.addFood("Penne cu ciuperci",26.0, 500.0,foodType);
                     audit.scrie("Food added");
                     break;
@@ -97,7 +99,7 @@ public class Main {
                 }
 
                 case 7: {
-                    FoodType foodType = FoodType.MAIN_COURSE;
+                    FoodType foodType = FoodType.MAIN;
                     Food food = new Food("Penne cu ciuperci",26.0, 500.0,foodType);
                     rservice.removeFood(food);
                     audit.scrie("Food removed");

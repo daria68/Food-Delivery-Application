@@ -1,8 +1,8 @@
-package Services;
-import Menu.*;
-import Users.Client;
-import Users.Deliveryman;
-import Users.VehicleType;
+package services;
+import entities.menuitems.*;
+import entities.users.Client;
+import entities.users.Deliveryman;
+import entities.users.VehicleType;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -14,12 +14,12 @@ import java.util.TreeSet;
 import java.util.Date;
 import java.text.SimpleDateFormat;
 
-public class ReadFromFile {
-    private static ReadFromFile read_instance = null;
-    public static ReadFromFile getInstance()
+public class FileReader {
+    private static FileReader read_instance = null;
+    public static FileReader getInstance()
     {
         if(read_instance == null)
-            read_instance = new ReadFromFile();
+            read_instance = new FileReader();
         return read_instance;
     }
 
@@ -49,7 +49,7 @@ public class ReadFromFile {
     {
         List<Drinks> drinks = new ArrayList<Drinks>();
         try {
-            RandomAccessFile file = new RandomAccessFile("Drinks.csv", "r");
+            RandomAccessFile file = new RandomAccessFile("drinks.csv", "r");
             String str;
             while((str = file.readLine()) != null)
             {

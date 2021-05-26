@@ -1,7 +1,7 @@
-package Services;
+package services;
 
-import Menu.*;
-import Users.Restaurant;
+import entities.menuitems.*;
+import entities.users.Restaurant;
 
 import java.util.List;
 

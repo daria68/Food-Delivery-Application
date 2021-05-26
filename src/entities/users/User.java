@@ -1,6 +1,5 @@
-package Users;
+package entities.users;
 
-//import javax.mail.internet.InternetAddress;
 import java.util.Date;
 
 public abstract class User {

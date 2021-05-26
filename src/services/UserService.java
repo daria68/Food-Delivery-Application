@@ -1,12 +1,10 @@
-package Services;
+package services;
 
-import Users.*;
-import Menu.*;
+import entities.users.*;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 import java.util.Scanner;
 import java.util.TreeSet;
 

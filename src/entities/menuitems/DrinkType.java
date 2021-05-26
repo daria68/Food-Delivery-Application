@@ -1,4 +1,4 @@
-package Menu;
+package entities.menuitems;
 
 public enum DrinkType {
     WATER,

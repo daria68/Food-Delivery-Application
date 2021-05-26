@@ -1,13 +1,13 @@
-package Menu;
+package entities.menuitems;
 
-public abstract class Menu {
+public abstract class MenuItem {
 
     private String name;
     private Double price;
     private Double quantity;
 
-    public Menu(){}
-    public Menu(String name, Double price, Double quantity){
+    public MenuItem(){}
+    public MenuItem(String name, Double price, Double quantity){
         this.name = name;
         this.price = price;
         this.quantity = quantity;

@@ -1,6 +1,6 @@
-package Menu;
+package entities.menuitems;
 
-public class Food extends Menu{
+public class Food extends MenuItem {
     private FoodType foodType;
 
     public Food() {}
